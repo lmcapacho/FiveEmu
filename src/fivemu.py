@@ -11,10 +11,15 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 
+from menubar import MenuBar
+
 
 class fivemu(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        menuBar = MenuBar()
+        self.setMenuBar(menuBar)
 
 
 if __name__ == "__main__":
